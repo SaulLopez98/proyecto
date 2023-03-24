@@ -2,7 +2,7 @@ import './App.css';
 import { ComponenteHeader } from './components/ComponenteHeader';
 import React, {useState} from 'react';
 import Datetime from 'react-datetime';
-import 'react-datetime/css/react-datetime.css'
+import 'react-datetime/css/react-datetime.css';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
         <Datetime
             inputProps={{placeholder: "DD/MM/YY"}}
             dateFormat="DD/MM/YYYY"
-            input={false}/>aaa
+            input={true}/>aaaa
       </body>
     </div>
   );
