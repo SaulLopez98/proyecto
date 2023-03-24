@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { ComponenteHeader } from './components/ComponenteHeader';
+import React, {useState} from 'react';
+import Datetime from 'react-datetime';
+import 'react-datetime/css/react-datetime.css'
 
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ComponenteHeader/>
       </header>
+      <body>
+        <h1 class='Titulo-Pag-Principal'>Apartado de gestion de aulas</h1>
+        <Datetime
+            inputProps={{placeholder: "DD/MM/YY"}}
+            dateFormat="DD/MM/YYYY"
+            input={false}/>aaa
+      </body>
     </div>
   );
 }
+
 
 export default App;
