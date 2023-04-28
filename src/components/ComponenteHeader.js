@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export const ComponenteHeader = () => {
   return (
     <div className='logo'>
-        <a href='App.js'><img className='logotipo' src='uni.png'></img></a>
+        <Link to={"/"}><img className='logotipo' src='uni.png'></img></Link>
     </div>
   )
 }
